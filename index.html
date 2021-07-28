@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>none</title>
+    <style type="text/css" media="all">
+      body {
+  
+        height: 110vh;
+        margin: 20px;
+  
+  
+  
+      }
+  
+  
+  
+  
+  
+      .contentiner {
+  
+        height: 600px;
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0px 0px 16px #FF82A6;
+        opacity: .8;
+        background: white;
+        visibility: visible;
+        transition: all .9s;
+  
+      }
+  
+  
+      .contentiner #icn {
+  
+        position: relative;
+        height: 30px;
+        width: 100px;
+        background: linear-gradient(to top, #FFBFDD, #FF5CA8, #FF7CE0);
+        border-radius: 59px;
+        background-size: 400%;
+        bottom: 6px;
+        right: 10px;
+        -webkit-text-fill-color: white;
+        text-align: center;
+        animation-name: animationio;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        transition: all 2s;
+  
+  
+  
+  
+  
+      }
+  
+  
+      @keyframes animationio {
+  
+  
+        to {
+  
+          background-position: -400%;
+        }
+  
+        0% {
+          box-shadow: 0px 0px 34px #FF99EB;
+        }
+  
+        10% {
+          box-shadow: 0px 0px 60px #FFB0EC;
+        }
+  
+        40% {
+          box-shadow: 0px 0px 78px #FF7CE0;
+        }
+  
+        60% {
+          box-shadow: 0px 0px 100px #FF49D4;
+        }
+  
+        100% {
+          box-shadow: 0px 0px 34px #FF92E5;
+        }
+      }
+  
+      .contentiner #icn p {
+        color: white;
+        padding: 5px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+      }
+  
+      .hedder {
+        position: absolute;
+        left: 60px;
+        top: 130px;
+        font-weight: bolder;
+        font-size: 60px;
+        color: #FFC4DF;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+  
+      }
+  
+      .hedder p {
+  
+        color: #FF6DB1;
+        font-size: 20px;
+        overflow: hidden;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+        padding-right: 3px;
+  
+  
+  
+      }
+  
+  
+      .nev {
+        position: absolute;
+        right: 30px;
+        background: #FF68B1;
+        width: 100%;
+        top: 30px;
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        border-top-right-radius: 30px;
+        border-top-left-radius: 3px;
+        text-align: right;
+        padding: 10px;
+        box-shadow: 0px 0px 34px #FF97C9;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+      }
+  
+      .nev a {
+        text-decoration: none;
+        margin-right: 20px;
+        color: white;
+        overflow: hidden;
+        transition: all .3s;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+      }
+  
+      #activ {
+  
+        background: #FFEAF4;
+        padding: 5px;
+        border-radius: 5px;
+        color: #FF3999;
+        box-shadow: 0px 0px 34px #FF97C9;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+      }
+  
+      @keyframes animation {
+  
+        0% {
+          background: linear-gradient(to bottom, #FFBFDD, #FF5CA8);
+  
+  
+        }
+  
+        25% {
+  
+          background: linear-gradient(to bottom, #FFBFDD, );
+  
+  
+        }
+  
+        50% {
+          background: linear-gradient(to bottom, #FFBFDD, #FF5CA8);
+  
+  
+  
+        }
+  
+  
+        75% {
+  
+          background: linear-gradient(to bottom, #FFBFDD, #FF5CA8);
+  
+  
+        }
+  
+        100% {
+  
+          background: linear-gradient(to bottom, #FFBFDD, #FF5CA8);
+  
+  
+        }
+  
+      }
+  
+  
+      @keyframes animation2 {
+  
+        top {
+          right: -400px;
+  
+  
+        }
+  
+        from {
+  
+          right: -560px;
+  
+        }
+  
+      }
+      
+      .btnfortop{
+       position: fixed;
+       margin: 0 auto;
+       bottom: -50%;
+       right: 50px;
+       opacity: .7;
+       transition: all .6s;
+       
+        
+      }
+          .btnfortop a{
+            
+            text-decoration: none;
+            background: #FF8DC6;
+            color: whitesmoke;
+            font-size: 40px;
+            text-align: center;
+            border-radius: 50px; 
+            height: 20px;
+            width: 20px;
+            padding-right: 12px;
+            padding-left: 12px;
+            box-shadow: 0px 0px 24px #FF8DC6;
+          }
+    </style>
+  </head>
+
+  <body id="body" onscroll="enable()" onclick="db()">
+
+
+
+    <div class="contentiner" id="off">
+
+      <div class="nev">
+        <a id="activ" onclick="off()">Home</a>
+        <a id="a1" onclick="pgup()">Services </a>
+        <a id="a2" onclick="pgup2() ">Design's</a>
+        <a>About Air</a>
+      </div>
+
+
+      <div class="hedder">
+        <span>RP Jadeja</span>
+        <br />
+        <span>Official site for tools</span>
+        <p>Hii dear visitors. Welcome to RP Jadeja official site hear you can access
+          our special toolkits..</p>
+        <div id="icn">
+          <p onclick="login()">Login</p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <style type="text/css" media="all">
+      #pag2 {
+  
+        display: none;
+        height: auto;
+        width: 100%;
+        margin-top: 30px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 16px #FF82A6 ;
+        opacity: .8;
+        background: white;
+        transition: all .3s;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+      }
+  
+      #hedder {
+  
+        color: #FF6DB1;
+        font-size: 50px;
+        overflow: hidden;
+        border-bottom: 3px solid #FF68B1;
+        padding: 20px;
+        margin-top: 0px; 
+        justify-content: center;
+        transition: all .3s;
+  
+  
+  
+  
+      }
+  
+      .idas {
+        height: auto;
+        width: 80%;
+        margin: 0 auto;
+        border-radius: 15px;
+        box-shadow: 0px 0px 34px #FF97C9;
+        opacity: .9;
+        background: #FF68B1;
+        display: block;
+        transition: all .3s;
+        text-align: center;
+  
+  
+      }
+  
+  
+      .idas h3 {
+        color: white;
+        margin: 0 auto;
+        padding: 10px;
+        font-size: 40px;
+  
+      }
+  
+      .idas p {
+        color: white;
+        font-weight: bold;
+        padding: 15px;
+        overflow: hidden;
+        font-size: 20px;
+  
+      }
+  
+  
+  
+      #pag3 {
+  
+        display: none;
+        height: auto;
+        width: 100%;
+        margin-top: 30px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 16px #FF82A6;
+        opacity: .8;
+        background: white;
+        transition: all .3s;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+      }
+  
+      #hedder {
+  
+        color: #FF6DB1;
+        font-size: 50px;
+        overflow: hidden;
+        border-bottom: 3px solid #FF68B1;
+        padding: 20px;
+        justify-content: center;
+        transition: all .3s;
+  
+  
+  
+      }
+  
+      #hedder2 {
+  
+        color: #FF6DB1;
+        font-size: 50px;
+        overflow: hidden;
+        border-bottom: 3px solid #FF68B1;
+        padding: 20px;
+        justify-content: center;
+        transition: all .3s;
+  
+  
+  
+  
+      }
+  
+      .idas {
+        height: auto;
+        width: 80%;
+        margin: 0 auto;
+        border-radius: 15px;
+        box-shadow: 0px 0px 34px #FF97C9;
+        opacity: .9;
+        background: #FF68B1;
+        display: block;
+        transition: all .3s;
+        text-align: center;
+  
+  
+      }
+  
+  
+      .idas h3 {
+        color: white;
+        margin: 0 auto;
+        padding: 10px;
+        font-size: 40px;
+  
+      }
+  
+      .idas p {
+        color: white;
+        font-weight: bold;
+        padding: 15px;
+        overflow: hidden;
+        font-size: 20px;
+  
+      }
+  
+  
+      /* page 2 CSS*/
+  
+      .pgcontent {
+  
+        text-align: center;
+        margin: 0 auto;
+        padding: 40px;
+        flex-direction: row;
+        display: flex;
+        overflow: scroll;
+  
+  
+  
+      }
+  
+      .box2 {
+        width: auto;
+        height: auto;
+        
+        margin: 0 auto;
+        padding-right: 30px;
+      }
+  
+      .inbox {
+  
+        background: #FF99BA;
+        border-radius: 20px;
+        padding: 10px;
+        box-shadow: 0px 0px 35px #FF84A8;
+  
+      }
+      
+      .inbox img {
+        height: 200px;
+        width: auto;
+        border-radius: 20px;
+      }
+      
+          .inbox p {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+      }
+          .inbox small {
+            color: white;
+            font-weight: bold;
+      }
+      
+              .inbox a {
+            color: #FF4E83;
+            text-decoration: none;
+            padding-left: 1px;
+      }
+  
+  .content2 h1{
+    
+    
+        color: #FF6DB1;
+        font-size: 50px;
+        overflow: hidden;
+        border-bottom: 3px solid #FF68B1;
+        padding: 20px;
+        justify-content: center;
+        transition: all .3s;
+  
+  }
+  
+  .nev2{
+  padding-top: .4px;
+  padding-right: 10px;
+    
+  }
+  
+  .nev2 ul{
+    
+      background: #FF82A6;
+      display: block;
+      flex-direction: row;
+      overflow: scroll;
+      width: 100%;
+      height: auto;
+      position: sticky;
+      padding: 10px;
+      left: 0px;
+      margin-left: -40px;
+      border-top-right-radius: 30px;
+      border-bottom-right-radius: 30px;
+  transition: all .5s;
+      box-shadow: 0px 0px 30px #FF8DC6;
+  }
+  
+  
+    
+  
+  
+  .nev2 ul a{
+    
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+    
+   
+  }
+    </style>
+    <div id="pag2">
+
+
+
+
+      <div class="content2" id="off2">
+
+        <div class="nev2">
+          <ul>
+            <a onclick="off()">Home</a>
+            <a id="activ">Sarvice</a>
+            <a onclick="pgup2() ">Design</a>
+            <a>About Air</a>
+
+          </ul>
+        </div>
+
+        <h1 id="hedder">Our Services..</h1>
+        <br />
+        <br />
+        <div class="idas">
+          <h3>Ui Design</h3>
+          <p>Tha AirOs is Officially designed or devloped by Rpjadeja and The owner
+            is developing and empiricism tga secretion of AirOs. tha owner is not
+            allowed to enter your comment hear from chhachhi.</p>
+          <br />
+        </div>
+        <br />
+        <br />
+        <div class="idas">
+          <h3>Photography</h3>
+          <p>Tha AirOs is Officially designed or devloped by Rpjadeja and The owner
+            is developin get all from hear back about account protection and customise
+            the best of luck to all from hear back about the Air force academy
+            and customise your all from you and empiricism tga secretion of AirOs.
+            tha owner is not allowed to enter your comment hear from chhachhi.</p>
+          <br />
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+      </div>
+    </div>
+
+    <!-- Page 3 starer -->
+
+    <div id="pag3">
+      <div class="content2" id="off2">
+
+        <div class="nev2">
+          <ul>
+            <a onclick="off()">Home</a>
+            <a onclick="pgup()">Sarvice</a>
+            <a id="activ" onclick="pgup2() ">Design</a>
+            <a>About Air</a>
+
+          </ul>
+        </div>
+
+
+        <h1>Design and Projects</h1>
+
+        <div class="pgcontent">
+
+          <div class="box2">
+            <div class="inbox">
+              <img class="icon" src="Air.png" alt="" />
+              <p>AirOs 2.0</p>
+              <small>Mobile Users Interface for Android and iOS devices...</small>
+
+            </div>
+          </div>
+          <div class="box2">
+            <div class="inbox">
+              <img class="icon" src="AirD.png" alt="" />
+              <p>AirOs Desktop Module design </p>
+              <small>The AirOs And Rpjadeja recently announced the *Air Desktop Module.
+                Design* for mor click. <a href="#">hear.</a>
+              </small>
+
+            </div>
+          </div>
+
+          <div class="box2">
+            <div class="inbox">
+              <img class="icon" src="graphicicn.png" alt="" />
+              <p>3D Graphics Design and other iconic works.</p>
+              <small>We also Make everything transparent.. <a href="#">hear</a> our special
+                graphic tools is available for You..</small>
+
+            </div>
+          </div>
+          <div class="box2">
+            <div class="inbox">
+              <img class="icon" src="Air.png" alt="" />
+              <p>AirOs 2.0</p>
+              <small>Mobile Users Interface for Android and iOS devices...</small>
+
+            </div>
+          </div>
+          <div class="box2">
+            <div class="inbox">
+              <img class="icon" src="Air.png" alt="" />
+              <p>AirOs 2.0</p>
+              <small>Mobile Users Interface for Android and iOS devices...</small>
+
+            </div>
+          </div>
+          <div class="box2">
+            <div class="inbox">
+              <img class="icon" src="Air.png" alt="" />
+              <p>AirOs 2.0</p>
+              <small>Mobile Users Interface for Android and iOS devices...</small>
+
+            </div>
+          </div>
+
+          <div class="box2">
+            <div class="inbox">
+              <img class="icon" src="Air.png" alt="" />
+              <p>AirOs 2.0</p>
+              <small>Mobile Users Interface for Android and iOS devices...</small>
+
+            </div>
+          </div>
+          <div class="box2">
+            <div class="inbox">
+              <img class="icon" src="Air.png" alt="" />
+              <p>AirOs 2.0</p>
+              <small>Mobile Users Interface for Android and iOS devices...</small>
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+    </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <script type="text/javascript" charset="utf-8">
+      function pgup()
+      {
+        document.getElementById("pag2").style.display = "block";
+        document.getElementById("pag3").style.display = "none";
+
+        document.getElementById("activ").style.color = "white";
+        document.getElementById("activ").style.boxShadow =
+          "0px 0px 0px transparent";
+        document.getElementById("a1").style.background = "#FFEAF4";
+        document.getElementById("a1").style.color = "#FF3999";
+        document.getElementById("a1").style.padding = "5px";
+        document.getElementById("a1").style.borderRadius = "5px";
+
+        document.getElementById("activ").style.background = "transparent";
+
+        document.getElementById("a2").style.background = "transparent";
+        document.getElementById("a2").style.color = "white";
+        document.getElementById("a2").style.padding = "5px";
+        document.getElementById("a2").style.borderRadius = "5px";
+
+      }
+
+      function off()
+      {
+        document.getElementById("pag2").style.display = "none";
+        document.getElementById("activ").style.color = "#FF3999";
+        document.getElementById("activ").style.boxShadow =
+          "0px 0px 34px #FF97C9";
+        document.getElementById("a1").style.background = "transparent";
+        document.getElementById("a1").style.color = "white";
+        document.getElementById("a1").style.padding = "5px";
+        document.getElementById("a1").style.borderRadius = "5px";
+
+        document.getElementById("activ").style.background = "white";
+
+      }
+
+
+      function pgup2()
+      {
+        document.getElementById("pag3").style.display = "block";
+        document.getElementById("pag2").style.display = "none";
+
+        document.getElementById("activ").style.color = "white";
+        document.getElementById("activ").style.boxShadow =
+          "0px 0px 0px transparent";
+        document.getElementById("a2").style.background = "#FFEAF4";
+        document.getElementById("a2").style.color = "#FF3999";
+        document.getElementById("a2").style.padding = "5px";
+        document.getElementById("a2").style.borderRadius = "5px";
+
+        document.getElementById("activ").style.background = "transparent";
+
+        document.getElementById("a1").style.background = "transparent";
+        document.getElementById("a1").style.color = "white";
+        document.getElementById("a1").style.padding = "5px";
+        document.getElementById("a1").style.borderRadius = "5px";
+
+      }
+
+      function off()
+      {
+        document.getElementById("pag2").style.display = "none";
+        document.getElementById("pag3").style.display = "none";
+
+        document.getElementById("activ").style.color = "#FF3999";
+        document.getElementById("activ").style.boxShadow =
+          "0px 0px 34px #FF97C9";
+        document.getElementById("activ").style.background = "white";
+
+        document.getElementById("a2").style.background = "transparent";
+        document.getElementById("a2").style.color = "white";
+        document.getElementById("a2").style.padding = "5px";
+        document.getElementById("a2").style.borderRadius = "5px";
+
+        document.getElementById("a1").style.background = "transparent";
+        document.getElementById("a1").style.color = "white";
+        document.getElementById("a1").style.padding = "5px";
+        document.getElementById("a1").style.borderRadius = "5px";
+
+
+      }
+    </script>
+    <style type="text/css" media="all">
+      #logging {
+  
+        height: auto;
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0px 0px 16px #FF84ACF0;
+        opacity: 1;
+        background: #FF84ACF0;
+        visibility: visible;
+        transition: all .9s;
+        overflow: hidden;
+        position: fixed;
+        top: -100%;
+        left: 0px;
+        transition: all .5s;
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      }
+  
+      #logging h1 {
+  
+        color: white;
+        text-align: center;
+        padding-top: 25px;
+        overflow: hidden;
+  
+  
+  
+      }
+  
+      .inp {
+  
+  
+        width: 100%;
+        text-align: left;
+        position: absolute;
+        display: inline-flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        overflow: hidden;
+  
+  
+  
+      }
+  
+      .inp input {
+  
+        height: 10px;
+        width: 60%;
+        border-radius: 30px;
+        border: none;
+        outline: none;
+        overflow: hidden;
+        padding: 20px;
+  
+  
+      }
+  
+      .btn {
+  
+        height: 20px;
+        width: 100%;
+        margin-top: 80px;
+        text-align: center;
+  
+  
+      }
+  
+      .btn a {
+        text-decoration: none;
+        color: #FF84ACF0;
+        background: white;
+        border-radius: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        box-shadow: 0px 0px 34px #FFD5E3;
+  
+  
+  
+  
+  
+      }
+    </style>
+    <div id="logging">
+      <h1>Login Now.</h1>
+      <div class="inp">
+        <input id="Nme" type="text/submit/hidden/button/image" name="" id="" value="" placeholder="Username"
+        />
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <div class="inp">
+        <input id="Nme" type="password" name="" value="" placeholder="User Key*" />
+      </div>
+      <div class="btn">
+        <a onclick="cls()">Login</a>
+      </div>
+      <br />
+      <p style="color: white; text-align: center; font-weight: bolder;">New User Creat Air account</p>
+      <br />
+      <br />
+      <br />
+
+      <div id="btnft" class="btnfortop">
+        <a href="#">↑</a>
+      </div>
+
+  </body>
+  <script type="text/javascript" charset="utf-8">
+    function enable()
+    {
+      document.getElementById("btnft").style.bottom = "10%";
+    }
+
+    function db()
+    {
+      document.getElementById("btnft").style.bottom = "-50%";
+    }
+
+    function login()
+    {
+      document.getElementById("logging").style.top = "0px";
+      document.getElementById("off").style.display = "none";
+
+      document.getElementById("off2").style.display = "none";
+
+
+    }
+
+
+
+    function cls()
+    {
+      document.getElementById("logging").style.top = "-100%";
+      document.getElementById("off").style.display = "block";
+
+      document.getElementById("off2").style.display = "block";
+
+
+    }
+
+    function pg3()
+    {
+      document.getElementById("pgo3").style.display = "block";
+    }
+  </script>
+
+</html>
+<!--.nev a:hover{
+        
+        
+      background: #FFEAF4;
+      padding: 5px;
+      border-radius: 5px;
+      color: #FF3999;
+      box-shadow: 0px 0px 34px #FF97C9;
+      }-->
+<!--
+Visual Code Mobile
+Developed By Manish Nirmal
+App Available on Play Store :-
+https://play.google.com/store/apps/details?id=lk.visual.code.mobile
+YouTube :-
+https://youtube.com/ManishNirmal
+-->
